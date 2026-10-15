@@ -8,11 +8,13 @@
 
 </details>
 
-**Step 1**
-- Be on a Fresh installation of Windows 10/11.
+**Step 1 — Prepare**
+- Use a fresh, stock Windows install. Supported builds (`playbook.conf`): `19044`, `19045`, `22000`, `22621`, `22631`, `22635`, `26100`, `26200`, `26300`. LTSC only counts where the build matches.
   - [Video Guide](https://youtu.be/Gat-aVYo8uY)
+- Back up first. Defender removal and Edge removal are irreversible without a repair install.
+- Meet the AME preflight checks before launching: internet connected, laptop plugged in, account password set, no pending Windows updates, no third-party AV installed.
 - Download [AME Wizard](https://download.ameliorated.io/AME%20Beta.zip)
-- Download [Latest Release of SynergyOS](https://github.com/synergy-tweaks/synergyos/releases)
+- Download [Latest Release of SynergyOS](https://github.com/synergy-tweaks/synergyos/releases) — only from this repo or the official Discord.
 
 **Step 2**
 - Launch `AME Wizard` as Administrator.
@@ -43,7 +45,7 @@
 - Click on `Select Features`
 - Choose your `Browser` of Choice. By Default `Brave` is Selected.
 - Browser Options
-  - None (If you already have a browser of choice installed.
+  - None (If you already have a browser of choice installed.)
   - Google Chrome (We do not recommend Chrome for privacy reasons.)
   - Brave (Default Selection)
   - Firefox
@@ -55,7 +57,7 @@
 - Select general tweaks to apply during SynergyOS installation.
 - Selection Options
   - Install SynToolkit (Dedicated Application for Post Installation Management)
-  - Remove Edge (irreversible by can be reinstalled later on)(Selected by Default)
+  - Remove Edge (irreversible but can be reinstalled later on)(Selected by Default)
   - Disable Xbox Services (Reversible by SynToolkit or Post Installation Folder)
   - Disable VBS / HVCI (Reduces Security / Reversible)
     - [Refer to this to understand security options.](https://github.com/Synergy-Tweaks/SynergyOS#security-options)
@@ -71,9 +73,15 @@
   - Only disable UAC if you fully understand.
 - Click  `Ok` after selecting your preferences 
 - Click `Next` to begin the Process.
+- During apply: close all apps and do not reboot until AME Wizard finishes.
 <img width="688" height="479" alt="image" src="https://github.com/user-attachments/assets/1b81cd8a-6abb-44b6-833a-90a6ea671646" />
 <img width="691" height="475" alt="image" src="https://github.com/user-attachments/assets/0aacc19d-6919-4c79-9f25-c44b167e589d" />
 <img width="689" height="475" alt="image" src="https://github.com/user-attachments/assets/53bf3267-2f4a-4255-801d-19930fdf8d2e" />
+
+**After install**
+- Windows Update is paused until 2038 by default. Resume it from Settings > Windows Update when you want updates, then reopen AME Wizard and click `Run Again` if needed.
+- If AME Wizard blocks you on validation (Step 4), recheck Step 1 preflights: pending updates, third-party AV, no password, offline, or unplugged laptop are the usual causes.
+- Stuck? Ask in [Discord](https://dsc.gg/kwanteks) with your Windows build (`winver`), AME Wizard version, and a screenshot of the error.
 
 
 

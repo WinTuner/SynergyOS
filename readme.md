@@ -27,9 +27,12 @@ SynergyOS is a comprehensive, performance-focused Windows modification playbook 
 
 SynergyOS is distributed as an `.apbx` playbook using AME Wizard to apply to your windows installation.
 
-1. Start with a clean, stock Windows ISO (22H2 through 26H2, LTSC supported).
-2. Download AME Wizard from [amelabs.net](https://amelabs.net).
-3. Load `SynergyOS.apbx` and follow the prompts.
+Full walkthrough with screenshots: [docs/Installation Guide.md](docs/Installation%20Guide.md).
+
+1. Start with a clean, stock Windows install. Supported builds (`playbook.conf`): `19044`, `19045`, `22000`, `22621`, `22631`, `22635`, `26100`, `26200`, `26300` (Win 10 21H2+ / Win 11 21H2–26H1; LTSC only where the build matches). Back up first — Defender and Edge removal are irreversible without a repair install.
+2. Meet the AME preflight checks: internet connected, laptop plugged in, account password set, no pending updates, no third-party AV, and be ready to toggle Defender off when asked (see guide Step 3).
+3. Download AME Wizard from [amelabs.net](https://amelabs.net) and `SynergyOS.apbx` from [Releases](https://github.com/Synergy-Tweaks/SynergyOS/releases).
+4. Run AME Wizard as administrator, load `SynergyOS.apbx`, close all apps, and do not reboot until it finishes.
 
 > [!IMPORTANT]
 > Only download `SynergyOS.apbx` from this repo or our official Discord. We are not responsible for modified or repackaged copies distributed elsewhere.
