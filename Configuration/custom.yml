@@ -4,9 +4,6 @@ privilege: trustedInstaller
 actions:
 
  
- - !powerShell: {command: '.\suitability.ps1', exeDir: true, wait: true, oobe: false}
-
-
  - !cmd: {command: 'reg import RunAsTI.reg', exeDir: true, wait: true, runas: currentUserElevated}
 
  - !writeStatus {status: "Copying Files"}
