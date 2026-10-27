@@ -36,13 +36,13 @@ SynergyOS is distributed as an `.apbx` playbook using AME Wizard to apply to you
 
 ## Security options
 
-Four of the checkboxes shown during setup trade Windows security for compatibility or
-performance. All four are **unchecked by default** — nothing on this list is applied
+Three of the checkboxes shown during setup trade Windows security for compatibility or
+performance. All three are **unchecked by default** — nothing on this list is applied
 unless you tick it.
 
 | Option | What it does | Why you might not want it |
 | --- | --- | --- |
-| Disable Defender | Stops the Defender services and deletes its binaries (on the first reboot after the playbook) | Irreversible without a repair install, and leaves the machine with no AV |
+| Defender | Left fully enabled - toggle post-install via the SynToolkit Defender menu | Toggling it off leaves the machine with no AV |
 | Disable Exploit Mitigations | Forces DEP, ASLR, SEHOP and CFG off machine-wide | Applies to every process, not just games; most anti-cheats refuse to run |
 | Disable User Account Control | `EnableLUA=0`, no elevation prompts | Everything you launch runs fully elevated, and UWP/Store apps stop working |
 | Disable VBS / HVCI / Credential Guard | Turns off virtualisation-based security and LSA Protection | LSA Protection is what stops credential-dumping tools reading `lsass` |

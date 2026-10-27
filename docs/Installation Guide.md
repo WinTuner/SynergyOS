@@ -61,7 +61,7 @@
     - [Refer to this to understand security options.](https://github.com/Synergy-Tweaks/SynergyOS#security-options)
 
  - Optional security trade-offs. Leave unchecked unless you accept the risks.
-   - Disable Defender (Reduces Security / Irreversible)
+   - Defender is left enabled - toggle it later via SynToolkit (Reversible)
    - Disable Exploit Mitigations (Reduces Security / Reversible)
   **Some anti-cheat games require mitigations.**
 - Choose whether User Account Control stays enabled or is disabled.
